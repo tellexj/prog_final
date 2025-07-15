@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"defer></script>
+  <script src="filaProfessor.js" defer></script>
+  <title>Fila Virtual - Professor</title>
+</head>
+<header style="display: flex; justify-content: space-between; align-items: center;">
+  <div class="logo">
+    <h1 style="color: white;">Autorizar Saída</h1>
+  </div>
+  <div class="icons">
+    <a href="index.html" title="Página Inicial"></a>
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+  </div>
+  <nav id="menu">
+    <ul>
+      <li><a href="./CadastrarProfessor.html">Cadastrar </a></li>
+      <li><a href="./ConsultarProfessor.html">Consultar </a></li>
+      <li><a href="./ListarProfessor.html">Listar </a></li>
+      <li><a href="./ConsultarProfessor.html">Consultar </a></li>
+      <li><a href="./AtualizarProfessor.html">Atualizar </a></li>
+      <li><a href="./ApagarProfessor.html">Apagar </a></li>
+      <li><a href="./PaginaInicial.html">Página Inicial</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+  <div class="container-form">
+    <form>
+      <h1>Lista de Saídas</h1>
+
+      <div id="fila"></div>
+
+      <button type="button" onclick="limparFinalizados()">Limpar finalizados</button><br><br>
+      <h2>Relatório de Saídas</h2>
+    <canvas id="graficoSaidas" width="400" height="200"></canvas>
+    <button onclick="atualizarGrafico()">Atualizar Gráfico</button>
+
+    </form>
+  </div>
+</body>
+</html>

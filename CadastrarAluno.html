@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="CadastrarAluno.js"defer></script>
+  <title>Controle de Saídas</title>
+ 
+</head>
+<body>
+
+  <header style="display: flex; justify-content: space-between; align-items: center;">
+    <div class="logo">
+      <h1 style="color: white;">Cadastrar Aluno</h1>
+    </div>
+    <div class="icons">
+      <a href="index.html" title="Página Inicial"></a>
+      <span class="menu-icon"  onclick="toggleMenu()">&#9776;</span>
+    </div>
+    <nav id="menu">
+        <ul>
+             <li><a href="./ListarAluno.html">Listar </a></li>
+            <li><a href="./ConsultarAluno.html">Consultar </a></li>
+            <li><a href="./AtualizarAluno.html">Atualizar </a></li>
+            <li><a href="./ApagarAluno.html">Apagar </a></li>
+            <li><a href="./filaAluno.html">Entrar na Fila </a></li>
+            <li><a href="./PaginaInicial.html">Página Inicial</a></li>
+            
+        </ul>
+    </nav>
+  </header>
+  <div class="container-form">
+    <form>
+      <label for="nome">Digite o nome do aluno:</label>
+      <input type="text" id="nome"><br>
+  
+      <label for="sobrenome">Digite o sobrenome do aluno:</label>
+      <input type="text" id="sobrenome"><br>
+  
+      <label for="matricula">Digite a matrícula do aluno:</label>
+      <input type="text" id="matricula"><br>
+  
+  
+      <label for="telefone">Digite o telefone do aluno:</label>
+      <input type="text" id="telefone"><br>
+  
+      <label for="email">Digite o email do aluno:</label>
+      <input type="email" id="email"><br>
+  
+      <button type="submit" id="cadastrar">Cadastrar</button><br>
+    </form>
+    <div id="res"></div>
+
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="filaAluno.js"defer></script>
+    <title>Fila Virtual - Aluno</title>
+</head>
+<header style="display: flex; justify-content: space-between; align-items: center;">
+  <div class="logo">
+    <h1 style="color: white;">Entrar na Fila</h1>
+  </div>
+  <div class="icons">
+    <a href="index.html" title="Página Inicial"></a>
+    <span class="menu-icon"  onclick="toggleMenu()">&#9776;</span>
+  </div>
+  <nav id="menu">
+      <ul>
+        
+          <li><a href="./CadastrarSaida.html">Cadastrar </a></li>
+          <li><a href="./ConsultarSaida.html">Consultar </a></li>
+          <li><a href="./ListarSaida.html">Listar </a></li>
+          <li><a href="./ConsultarSaida.html">Consultar </a></li>
+          <li><a href="./AtualizarSaida.html">Atualizar </a></li>
+          <li><a href="./ApagarSaida.html">Apagar </a></li>
+          <li><a href="./PaginaInicial.html">Página Inicial</a></li>
+          
+      </ul>
+  </nav>
+</header>
+<body>
+  
+  <div class="container-form">
+    <form><br>
+  <h1>Solicitação de Saída </h1>
+
+  
+  <label for="nome">Nome do aluno:</label>
+  <input type="text" id="nome">
+  <br>
+
+  <label for="motivo">Motivo:</label>
+  <input type="text" id="motivo">
+  <br>
+  <button id="adicionar">Solicitar saída</button>
+</form>
+  
+</body>
+</html>

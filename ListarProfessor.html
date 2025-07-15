@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="listar.css">
+  <script src="ListarProfessor.js"defer></script>
+  <title>Controle de Saídas</title>
+ 
+</head>
+<body>
+
+  <header style="display: flex; justify-content: space-between; align-items: center;">
+    <div class="logo">
+      <h1 style="color: white;">Listar Professor</h1>
+    </div>
+    <div class="icons">
+      <a href="index.html" title="Página Inicial"></a>
+      <span class="menu-icon"  onclick="toggleMenu()">&#9776;</span>
+    </div>
+    <nav id="menu">
+        <ul>
+          
+            <li><a href="./CadastrarProfessor.html">Cadastrar </a></li>
+            <li><a href="./ConsultarProfessor.html">Consultar </a></li>
+            <li><a href="./AtualizarProfessor.html">Atualizar </a></li>
+            <li><a href="./ApagarProfessor.html">Apagar </a></li>
+            <li><a href="./filaProfessor.html">Autorizar Saída </a></li>
+            <li><a href="./PaginaInicial.html">Página Inicial</a></li>
+            
+        </ul>
+    </nav>
+  </header>
+  <div class="container-form">
+    
+      <button type="submit" id="listar">Listar</button>
+<div id="res"></div>
+  </div>
+  
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="listar.css">
+  <script src="ListarAluno.js"defer></script>
+  <title>Controle de Saídas</title>
+ 
+</head>
+<body>
+
+  <header style="display: flex; justify-content: space-between; align-items: center;">
+    <div class="logo">
+      <h1 style="color: white;">Listar Aluno</h1>
+    </div>
+    <div class="icons">
+      <a href="index.html" title="Página Inicial"></a>
+      <span class="menu-icon"  onclick="toggleMenu()">&#9776;</span>
+    </div>
+    <nav id="menu">
+        <ul>
+          
+            <li><a href="./CadastrarAluno.html">Cadastrar </a></li>
+            <li><a href="./ConsultarAluno.html">Consultar </a></li>
+            <li><a href="./AtualizarAluno.html">Atualizar </a></li>
+            <li><a href="./ApagarAluno.html">Apagar </a></li>
+            <li><a href="./filaAluno.html">Entrar na Fila </a></li>
+            <li><a href="./PaginaInicial.html">Página Inicial</a></li>
+            
+        </ul>
+    </nav>
+  </header>
+  <div class="container-form">
+    
+      <button type="button" id="listar">Listar</button>
+
+    <div id="res"></div>
+  </div>
+  
+
+</body>
+</html>

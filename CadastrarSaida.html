@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="CadastrarSaida.js"defer></script>
+  <title>Controle de Saídas</title>
+ 
+</head>
+<body>
+
+  <header style="display: flex; justify-content: space-between; align-items: center;">
+    <div class="logo">
+      <h1 style="color: white;">Cadastrar Saída</h1>
+    </div>
+    <div class="icons">
+      <a href="index.html" title="Página Inicial"></a>
+      <span class="menu-icon"  onclick="toggleMenu()">&#9776;</span>
+    </div>
+    <nav id="menu">
+        <ul>
+             <li><a href="./ListarSaida.html">Listar </a></li>
+            <li><a href="./ConsultarSaida.html">Consultar </a></li>
+            <li><a href="./AtualizarSaida.html">Atualizar </a></li>
+            <li><a href="./ApagarSaida.html">Apagar </a></li>
+            <li><a href="./PaginaInicial.html">Página Inicial</a></li>
+            
+        </ul>
+    </nav>
+  </header>
+  <div class="container-form">
+    <form>
+    
+      <label for="dataSolicitacao">Selecione a data da saída:</label>
+      <input type="date" id="dataSolicitacao"><br>
+  
+      <label for="horaSaida">Selecione a hora da saída:</label>
+      <input type="time" id="horaSaida"><br>
+  
+      <label for="horaRetorno">Selecione a hora de retorno:</label>
+      <input type="time" id="horaRetorno"><br>
+  
+      <label for="motivo">Digite o motivo da saída:</label>
+      <input type="text" id="motivo"><br>
+  
+      <label for="localDestino">Digite o local da saída:</label>
+      <input type="text" id="localDestino"><br>
+
+      <label for="status">Digite o status da saída:</label>
+      <input type="text" id="status"><br>
+
+      <label for="nomeAluno">Digite o nome do aluno:</label>
+      <input type="text" id="nomeAluno"><br>
+  
+      <label for="nomeProfessor">Digite o nome do professor:</label>
+      <input type="text" id="nomeProfessor"><br>
+
+      <label for="aluno_cod">Digite o id do aluno:</label>
+      <input type="text" id="aluno_cod"><br>
+
+      <label for="professor_cod">Digite o id do professor:</label>
+      <input type="text" id="professor_cod"><br>
+  
+      <button type="submit" id="cadastrar">Cadastrar</button>
+    </form>
+    <div id="res"></div>
+  </div>
+  
+
+</body>
+</html>
